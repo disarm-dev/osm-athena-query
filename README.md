@@ -8,7 +8,7 @@ The osm-athena-query is a prototype for an interface to query publicly available
 
 To satisfy DiSARM's need to efficiently query building structures within specific geographic bounds, the *osm-athena-query* service provides an efficient method to query and retrieve this data.
 
-## R Client Interface
+## R Client Interface (on client machine running R)
 
 *osm-athena-query/R/disarm_osm_aws_services.R* - is a R client interface to query OSM data on Amazon S3. The client interface currently provides the following functionality:
 
@@ -20,7 +20,7 @@ To satisfy DiSARM's need to efficiently query building structures within specifi
   *disarm_aws_osm_results*: function accepts the AWS query id's for retrieval of the results from Amazon S3.
    The results files (formatted as csv) are pulled down to the current working directory of R.
 
-## Server-side Service
+## Server-side Service (deployed on AWS platform)
 
 *osm-athena-query/src/main/java/com/ucsf/disarm/lambda/* - contains Java code that accepts and validates client side parameters and processes the retrieval request.
 
