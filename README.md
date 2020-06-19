@@ -11,12 +11,12 @@ To satisfy DiSARM's need to efficiently query building structures within specifi
 ## R Client Interface
 
 *osm-athena-query/R/disarm_osm_aws_services.R* - is a R client interface to query OSM data on Amazon S3. The client interface currently provides the following functionality:
-     a. disarm_aws_service: function accepts a bounding box and sends the query to the DiSARM OSM service on AWS.
-         Upon successful submission of request to AWS the function returns a AWS query id. AWS will place the results on 
-         Amazon S3 when complete. If transaction is not successful a status_code other than 200 is returned with an error 
-         message.
-     b. disarm_aws_osm_results: function accepts the AWS query id's for retrieval of the results from Amazon S3.
-        The results files (formatted as csv) are pulled down to the current working directory of R.
+  *a. disarm_aws_service: function accepts a bounding box and sends the query to the DiSARM OSM service on AWS.
+    Upon successful submission of request to AWS the function returns a AWS query id. AWS will place the results on 
+    Amazon S3 when complete. If transaction is not successful a status_code other than 200 is returned with an error 
+    message.
+  *b. disarm_aws_osm_results: function accepts the AWS query id's for retrieval of the results from Amazon S3.
+   The results files (formatted as csv) are pulled down to the current working directory of R.
 
 ## Server-side Service
 
